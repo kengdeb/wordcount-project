@@ -1,0 +1,23 @@
+<h1>Count Page Test</h1>
+
+<h1>Original</h1>
+
+{{fullText}}
+
+<<a href={% url 'kengFirstPage' %}> click to return</a>
+
+<h2>There are {{count}} words in your text</h2>
+
+<h2>wordCount</h2>
+
+{{wordDict}}
+
+<h2>Example of for loop in web</h2>
+
+{% for item, countList in wordDictList %}
+{{ item }} - {{countList}}
+<br/>
+{% endfor %}
+
+
+<a href="{% url 'about'%}"> if you want to know more about me</a>
